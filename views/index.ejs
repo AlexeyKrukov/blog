@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title>Doc</title>
+    </head>
+    <body>
+    <% for (let i = 0; i < posts.length; i++) {%>
+        <div class = "post">
+            <h1><a href="/post/<%= (i + 1)%>"><%= posts[i].title %></a></h1>
+            <p><%= posts[i].content %></p>
+        </div>
+    <%}%>
+    </body>
+</html>
